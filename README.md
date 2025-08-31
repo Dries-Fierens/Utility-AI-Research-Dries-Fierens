@@ -165,7 +165,7 @@ End → cleanup when finished
 
 ### Step 5: Utility Brain
 
-The UtilityBrain coordinates everything
+The UtilityBrain coordinates everything:
 
 Periodically evaluates all actions.
 
@@ -224,7 +224,7 @@ Handles cooldowns and action transitions.
         }
     }
 
-    // Switch the current action to the nex best action
+    // Switch the current action to the next best action
     void SwitchTo(UtilityAction next)
     {
         CurrentAction?.executor.End(ctx);
