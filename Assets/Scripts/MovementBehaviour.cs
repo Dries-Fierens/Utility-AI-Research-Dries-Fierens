@@ -31,7 +31,7 @@ public class MovementBehaviour : MonoBehaviour
     {
         // Personally a more simple way to move the character, also adds some damping to show smooth acceleration
         // https://www.alexisbacot.com/blog/the-art-of-damping
-        _rigidBody.AddForce((DesiredMovementDirection * _movementSpeed - _rigidBody.velocity) / Time.fixedDeltaTime / _damping);
+        _rigidBody.AddForce((DesiredMovementDirection * _movementSpeed - _rigidBody.linearVelocity) / Time.fixedDeltaTime / _damping);
     }
 
     private void Update()
